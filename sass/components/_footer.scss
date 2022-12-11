@@ -1,0 +1,111 @@
+.footer {
+    background-color: var(--head-footer-bg);
+    padding: 60px 0;
+    &-logo {
+            font-family: raleway;
+            font-size: 26px;
+            line-height: 1.19;
+            color: var(--white);
+            display: inline-block;
+    
+        }
+    &-contact-link {
+        display: block;
+        padding-top: 9px;
+        width: 231px;
+        font-size: 14px;
+        line-height: 1.71;
+        color: var(--footer-contact);
+        letter-spacing: 0.03em;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:hover,
+        &:focus {
+            color: var(--white);
+        }
+    }
+    &-social {
+        display: flex;
+    }
+}
+
+.box-main {
+    display: flex;
+    align-items: baseline;
+}
+
+.contact-link-map {
+    color: var(--white);
+    padding-top: 20px;
+}
+
+.social-box {
+    display: block;
+    margin-left: 70px;
+}
+
+.social-title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.social-link--footer {
+    color: var(--white);
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-right: 10px;
+}
+
+.social-logo {
+    fill: currentColor;
+}
+
+.subscribe {
+    margin-left: 93px;
+    &-mail {
+            background-color: var(--head-footer-bg);
+            outline: none;
+            width: 358px;
+            height: 50px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+            border-radius: 4px;
+            color: var(--white);
+            padding-left: 16px;
+            transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+            &:hover,
+            &:focus {
+                border-color: var(--hover-color);
+            }
+        }
+    &-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 50px;
+        background-color: var(--hover-color);
+        color: var(--white);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        margin-left: 12px;
+        border: none;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0.06em;
+    }
+    &-div {
+        display: flex;
+    }
+}
+
+
+
+.send-logo {
+    fill: var(--white);
+    margin-left: 10px;
+}

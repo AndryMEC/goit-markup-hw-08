@@ -1,0 +1,328 @@
+.header {
+    position: relative;
+    min-height: 60px;
+
+    @media screen and (max-width: 767px) {
+        display: flex;
+        // align-items: center;
+    }
+    &-nav__logo {
+        font-family: raleway;
+        font-size: 24px;
+        line-height: 1.19;
+        color: var(--logo);
+     }
+    &-nav__logo--web {
+        color: var(--hover-color);
+    }
+}
+
+.header--border {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+
+}
+
+.mobile-open {
+    overflow: hidden;
+}
+
+.header-nav.container {
+    @media screen and (max-width: 767px) {
+
+        margin: 0 auto 0 15px;
+
+    }
+}
+
+.header-logo__indent-right {
+    margin-right: 93px;
+}
+
+.header-nav__list {
+    display: flex;
+    padding-left: 0px;
+    margin-right: auto;
+
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+        margin-top: 24px;
+        margin-left: 40px;
+        margin-bottom: auto;
+    }
+}
+
+
+.header-nav__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+
+
+.header-nav__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: var(--primary-color);
+    font-weight: 500;
+
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (max-width: 767px) {
+        padding: 16px 0;
+        font-size: 40px;
+        line-height: 1.18;
+        letter-spacing: 0.02em;
+    }
+
+    @media screen and (max-width: 479px) {
+        padding: 16px 0;
+        font-size: 30px;
+        line-height: 1.18;
+        letter-spacing: 0.02em;
+    }
+
+    @media screen and (max-width: 479px) {
+        padding: 15px 0;
+
+    }
+}
+
+.header-nav__link:focus,
+.header-nav__link:hover {
+    color: var(--hover-color);
+}
+
+.mobile-open {
+    overflow: hidden;
+}
+
+.header-nav__link--is-active {
+    position: relative;
+}
+
+.header-nav__link--is-active::after {
+    display: inline-block;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    border-radius: 2px;
+    background-color: var(--hover-color);
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
+.header-contacts {
+    display: flex;
+
+    @media screen and (max-width: 1199px) {
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    @media screen and (max-width: 767px) {
+        flex-direction: column-reverse;
+        margin-left: 40px;
+        margin-bottom: auto;
+    }
+
+
+}
+
+
+
+// .header-contacts__indent-left {
+//     margin-left: auto;
+// }
+
+.header-contacts__list:not(:last-child) {
+    margin-right: 50px;
+
+    @media screen and (max-width: 1199px) {
+        margin-right: auto;
+    }
+}
+
+.header-contacts__link {
+    color: var(--link-list-text);
+    font-weight: 500;
+
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 1199px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding-top: 32px;
+        padding-bottom: 32px;
+
+    }
+
+    @media screen and (max-width: 767px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding-top: 16px;
+        padding-bottom: 16px;
+
+    }
+}
+
+.header-contacts__link--email {
+    @media screen and (max-width: 1199px) {
+        padding-top: 21px;
+        // margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: 767px) {
+        font-size: 24px;
+        line-height: 1.17;
+    }
+}
+
+.header-contacts__link--tel {
+    @media screen and (max-width: 1199px) {
+
+        padding-bottom: 18px;
+    }
+
+    @media screen and (max-width: 767px) {
+        font-size: 34px;
+        line-height: 1.18;
+        color: var(--hover-color);
+    }
+
+    @media screen and (max-width: 479px) {
+        font-size: 24px;
+    }
+}
+
+.header-contacts__link:hover,
+.header-contacts__link:focus {
+    color: var(--hover-color);
+}
+
+.header-contacts__icon {
+    fill: currentColor;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
+.header-contacts__icon-indent-right {
+    margin-right: 10px;
+}
+
+.header-nav__link--is-active {
+    color: var(--hover-color);
+}
+
+// .header {
+//     background-color: var(--white);
+//     border-bottom: 1px solid #ECECEC;
+//     &-nav {
+//             display: flex;
+//             align-items: center;
+//         }
+//     &-nav__logo {
+//         font-family: raleway;
+//         font-size: 26px;
+//         line-height: 1.19;
+//         color: var(--logo);
+    
+//     }
+//     &-nav__logo--web {
+//     color: var(--hover-color);
+//     }
+//     &-list {
+//         display: flex;
+//         margin-left: 93px;
+    
+//         &__item {
+//             margin-right: 50px;
+//         }
+    
+//         &:last-child {
+//             margin-right: 0;
+//         }
+//     }
+//     &-contact {
+//         display: flex;
+//         margin-left: auto;
+//         margin-right: 15px;
+    
+//         .header-contact__item+.header-contact__item {
+//             margin-left: 48px;
+//         }
+//     }
+//     &-nav__link {
+//     position: relative;
+//     display: block;
+//     padding-top: 32px;
+//     padding-bottom: 32px;
+//     color: var(--main-title);
+//     font-weight: 500;
+//     font-size: 14px;
+//     line-height: 1.333;
+//     letter-spacing: 0.02em;
+//     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//     &:hover, &:focus {
+//         color: var(--hover-color);
+//     }
+//     }
+//     &-contact__item__link {
+//         display: flex;
+//         padding-top: 31px;
+//         padding-bottom: 31px;
+//         color: var(--link-list-text);
+//         font-weight: 500;
+//         font-size: 14px;
+//         line-height: 1.333;
+//         align-items: center;
+//         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+//         &:hover,
+//         &:focus {
+//             color: var(--hover-color);
+//         }
+//     }
+//     &-contact__icon {
+//         margin-right: 10px;
+//         fill: currentColor;
+//     }
+// }
+
+
+
+// .current::after {
+//     position: absolute;
+//     bottom: -1px;
+//     content: '';
+//     display: block;
+//     width: 100%;
+//     height: 4px;
+//     background-color: var(--hover-color);
+//     border-radius: 50px;
+// }
+

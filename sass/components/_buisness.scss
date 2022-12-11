@@ -1,0 +1,24 @@
+.buisness {
+    padding-top: 0;
+    &-list {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+    &-list__item {
+        position: relative;
+    }
+    &-list__lable {
+        display: flex;
+        position: absolute;
+        background-color: rgba(47, 48, 58, 0.8);
+        color: #fff;
+        width: 100%;
+        height: 24%;
+        bottom: 0;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+        align-items: center;
+        justify-content: center;
+    }
+}

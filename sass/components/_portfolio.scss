@@ -1,0 +1,95 @@
+.filter-btn-list {
+    display: flex;
+    justify-content: center;
+}
+
+.filter-button {
+    color: var(--main-title);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.63;
+    background-color: var(--teem-bg);
+    cursor: pointer;
+    border-radius: 4px;
+    min-width: 73px;
+    padding: 6px 22px;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, &:focus {
+        color: var(--white);
+            background-color: var(--hover-color);
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+                0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+}
+
+.btn-nav:not(:last-child) {
+    margin-right: 8px;
+}
+
+.filter {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    &-link {
+            display: block;
+            transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);        
+            &:hover,
+            &:focus {
+                box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+                1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
+                &:hover .animate,
+                &:focus .animate {
+                    transform: translateY(0);
+                }
+    }
+    &-img {
+        position: relative;
+        overflow: hidden;
+    }
+    &-title {
+        color: var(--main-title);
+        font-size: 18px;
+        line-height: 2;
+        margin-bottom: 4px;
+    }
+    &-text {
+        color: var(--link-list-text);
+        font-size: 16px;
+        line-height: 1.88;
+    }
+}
+
+.animate {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 1px;
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &-text {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            letter-spacing: 0.03em;
+            color: #FFFFFF;
+            padding: 63px 24px;
+        }
+}
+
+
+// .filter-link:hover .animate,
+// .filter-link:focus .animate {
+//     transform: translateY(0);
+// }
+
+.border {
+    border: 1px solid #EEEEEE;
+    border-top: 0;
+    padding: 20px 24px;
+}

@@ -1,0 +1,45 @@
+.team {
+    background-color: var(--teem-bg);
+    &-list {
+            display: flex;
+            margin-top: 50px;
+            gap: 30px;
+        }
+    &-item {
+        background-color: var(--white);
+        border-radius: 0px 0px 4px 4px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    
+    }
+    &-title {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.19;
+        color: var(--main-title);
+        text-align: center;
+        letter-spacing: 0.03em;
+        padding-top: 30px;
+    }
+    &-text {
+        font-size: 16px;
+        line-height: 1.19;
+        color: var(--link-list-text);
+        text-align: center;
+        letter-spacing: 0.03em;
+        padding-top: 10px;
+        padding-bottom: 16px;
+    
+    }
+}
+
+.social-icons__item {
+    margin-right: 10px;
+}
+
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
