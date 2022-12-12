@@ -22,15 +22,16 @@
 
         overflow-y: scroll;
     }
-}
-
-.header-mobile.is-open {
-
-    @media screen and (max-width: 767px) {
-        // display: block;
-        transform: translateX(100%);
+    &.is-open {
+    
+        @media screen and (max-width: 767px) {
+            // display: block;
+            transform: translateX(100%);
+        }
     }
 }
+
+.header-mobile
 
 
 
@@ -51,6 +52,15 @@
     position: relative;
     margin-top: auto;
     margin-bottom: auto;
+    &:not(:last-child):after {
+            display: inline-block;
+            position: absolute;
+            content: '';
+            height: 22px;
+            width: 1px;
+            border: 1px solid rgba(33, 33, 33, 0.2);
+            background-color: var(--white);
+        }
 }
 
 
@@ -66,17 +76,9 @@
     @media screen and (max-width: 479px) {
         font-size: 15px;
     }
+    
 }
 
-.mobile__social-item:not(:last-child):after {
-    display: inline-block;
-    position: absolute;
-    content: '';
-    height: 22px;
-    width: 1px;
-    border: 1px solid rgba (33, 33, 33, 0.2);
-    background-color: var(--white);
-}
 
 .mobile-menu {
     position: relative;

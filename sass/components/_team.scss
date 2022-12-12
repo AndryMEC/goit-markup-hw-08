@@ -1,9 +1,17 @@
 .team {
     background-color: var(--teem-bg);
     &-list {
+        @media screen and (max-width: 1199px) {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 30px;
+                margin-top: 30px
+            }
+        @media screen and (min-width: 1200px) {
             display: flex;
             margin-top: 50px;
             gap: 30px;
+    }
         }
     &-item {
         background-color: var(--white);
