@@ -9,8 +9,18 @@
             display: inline-block;
     
         }
+    &-button {
+        
+    }
+    &-contact {
+        @media screen and (max-width: 1199px) {
+            display: inline-block;
+            text-align: center;
+        }
+    }
     &-contact-link {
         display: block;
+        
         padding-top: 9px;
         width: 231px;
         font-size: 14px;
@@ -18,7 +28,7 @@
         color: var(--footer-contact);
         letter-spacing: 0.03em;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
+        
         &:hover,
         &:focus {
             color: var(--white);
@@ -26,12 +36,22 @@
     }
     &-social {
         display: flex;
+        justify-content: center;
     }
 }
 
 .box-main {
-    display: flex;
-    align-items: baseline;
+    // align-items: baseline;
+    justify-content: center;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
+}
+
+.contact-box {
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
 }
 
 .contact-link-map {
@@ -40,16 +60,35 @@
 }
 
 .social-box {
-    display: block;
-    margin-left: 70px;
+    
+    @media screen and (min-width: 1200px) {
+        display: block;
+        margin-left: 70px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        position: relative;
+        top: -110px;
+    }
+    
 }
 
 .social-title {
+    margin-top: 60px;
     margin-bottom: 20px;
     font-weight: 700;
+    letter-spacing: 0.03em;
     color: var(--white);
     text-transform: uppercase;
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            margin-top: 0;
+        }
 }
+
+
 
 .social-link--footer {
     color: var(--white);
@@ -61,12 +100,33 @@
     fill: currentColor;
 }
 
+.contact-social-box {
+    @media screen and (min-width: 768px) {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-around;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            align-items: baseline;
+            text-align: left;
+            margin-right: auto;
+            margin-left: 0;
+            margin-bottom: 0;
+        }
+    }
+
+
 .subscribe {
-    margin-left: 93px;
+    @media screen and (min-width: 1200px) {
+        margin-left: 93px;
+    }
+    
     &-mail {
+            
             background-color: var(--head-footer-bg);
             outline: none;
-            width: 358px;
             height: 50px;
             border: 1px solid rgba(255, 255, 255, 0.3);
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -74,6 +134,14 @@
             color: var(--white);
             padding-left: 16px;
             transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+            @media screen and (max-width: 1199px) {
+                    width: 450px;
+                }
+
+            @media screen and (min-width: 1200px) {
+                width: 358px;
+            }
     
             &:hover,
             &:focus {
@@ -81,25 +149,42 @@
             }
         }
     &-button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        // display: block;
+        margin-top: 20px;
         width: 200px;
         height: 50px;
         background-color: var(--hover-color);
         color: var(--white);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
-        margin-left: 12px;
         border: none;
         cursor: pointer;
         font-weight: 700;
         font-size: 16px;
         line-height: 30px;
         letter-spacing: 0.06em;
+        
+        @media screen and (min-width: 1200px) {
+            margin-top: 0;
+            margin-left: 12px;
+        }
+    }
+    &-button__div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+
+        
     }
     &-div {
-        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        @media screen and (min-width: 1200px) {
+            display: flex;
+        }
+        
     }
 }
 

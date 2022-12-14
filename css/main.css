@@ -49,6 +49,21 @@ img {
   padding: 0 15px;
   max-width: 1200px;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 
 .section {
   padding: 60px 0;
@@ -943,6 +958,29 @@ img {
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+}
+@media screen and (max-width: 767px) {
+  .clients-list {
+    -ms-flex-preferred-size: calc((100% - 100px) / 2);
+        flex-basis: calc((100% - 100px) / 2);
+  }
+}
+@media screen and (max-width: 1199px) {
+  .clients-list {
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients-list {
+    margin-top: 50px;
+  }
 }
 .clients-list__item {
   display: -webkit-box;
@@ -960,15 +998,24 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
-  margin-top: 50px;
   color: #afb1b8;
   border: 1px solid currentColor;
   border-radius: 4px;
   fill: currentColor;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .client-link {
+    width: 170px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .client-link {
+    width: 150px;
+  }
 }
 .client-link:hover, .client-link:focus {
   color: var(--hover-color);
@@ -984,6 +1031,12 @@ img {
   line-height: 1.19;
   color: var(--white);
   display: inline-block;
+}
+@media screen and (max-width: 1199px) {
+  .footer-contact {
+    display: inline-block;
+    text-align: center;
+  }
 }
 .footer-contact-link {
   display: block;
@@ -1003,15 +1056,28 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .box-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .box-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .contact-box {
+    text-align: center;
+  }
 }
 
 .contact-link-map {
@@ -1019,16 +1085,36 @@ img {
   padding-top: 20px;
 }
 
-.social-box {
-  display: block;
-  margin-left: 70px;
+@media screen and (min-width: 1200px) {
+  .social-box {
+    display: block;
+    margin-left: 70px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .social-box {
+    position: relative;
+    top: -110px;
+  }
 }
 
 .social-title {
+  margin-top: 60px;
   margin-bottom: 20px;
   font-weight: 700;
+  letter-spacing: 0.03em;
   color: var(--white);
   text-transform: uppercase;
+}
+@media screen and (max-width: 1199px) {
+  .social-title {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .social-title {
+    margin-top: 0;
+  }
 }
 
 .social-link--footer {
@@ -1041,13 +1127,41 @@ img {
   fill: currentColor;
 }
 
-.subscribe {
-  margin-left: 93px;
+@media screen and (min-width: 768px) {
+  .contact-social-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact-social-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    text-align: left;
+    margin-right: auto;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    margin-left: 93px;
+  }
 }
 .subscribe-mail {
   background-color: var(--head-footer-bg);
   outline: none;
-  width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1058,10 +1172,42 @@ img {
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 1199px) {
+  .subscribe-mail {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe-mail {
+    width: 358px;
+  }
+}
 .subscribe-mail:hover, .subscribe-mail:focus {
   border-color: var(--hover-color);
 }
 .subscribe-button {
+  margin-top: 20px;
+  width: 200px;
+  height: 50px;
+  background-color: var(--hover-color);
+  color: var(--white);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe-button {
+    margin-top: 0;
+    margin-left: 12px;
+  }
+}
+.subscribe-button__div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1071,25 +1217,22 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 200px;
-  height: 50px;
-  background-color: var(--hover-color);
-  color: var(--white);
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  margin-left: 12px;
-  border: none;
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 0.06em;
 }
 .subscribe-div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .send-logo {
