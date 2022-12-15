@@ -35,7 +35,7 @@ ol {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -1181,6 +1181,7 @@ img {
 @media screen and (min-width: 1200px) {
   .subscribe {
     margin-left: 93px;
+    width: 100%;
   }
 }
 .subscribe-mail {
@@ -1198,12 +1199,14 @@ img {
 }
 @media screen and (max-width: 1199px) {
   .subscribe-mail {
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
   .subscribe-mail {
-    width: 358px;
+    width: 100%;
+    min-width: 358px;
   }
 }
 .subscribe-mail:hover, .subscribe-mail:focus {
@@ -1220,7 +1223,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 20px;
-  width: 200px;
+  min-width: 200px;
   height: 50px;
   background-color: var(--hover-color);
   color: var(--white);
@@ -1239,6 +1242,9 @@ img {
     margin-top: 0;
     margin-left: 12px;
   }
+}
+.subscribe-label {
+  width: 100%;
 }
 .subscribe-div {
   display: -webkit-box;
