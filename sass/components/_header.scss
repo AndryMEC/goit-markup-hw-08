@@ -27,9 +27,9 @@
 
 }
 
-.mobile-open {
-    overflow: hidden;
-}
+// .mobile-open {
+//     overflow: hidden;
+// }
 
 .header-nav.container {
     @media screen and (max-width: 767px) {
@@ -47,12 +47,17 @@
     display: flex;
     padding-left: 0px;
     margin-right: auto;
+    margin-left: 87px;
 
     @media screen and (max-width: 767px) {
         flex-direction: column;
         margin-top: 24px;
         margin-left: 40px;
         margin-bottom: auto;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 92px;
     }
 }
 
