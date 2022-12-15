@@ -9,9 +9,6 @@
             display: inline-block;
     
         }
-    &-button {
-        
-    }
     &-contact {
         @media screen and (max-width: 1199px) {
             display: inline-block;
@@ -150,6 +147,9 @@
         }
     &-button {
         // display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin-top: 20px;
         width: 200px;
         height: 50px;
@@ -169,20 +169,16 @@
             margin-left: 12px;
         }
     }
-    &-button__div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-
-        
-    }
+  
+    
     &-div {
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         text-align: center;
         align-items: center;
         @media screen and (min-width: 1200px) {
-            display: flex;
+            flex-direction:row;
         }
         
     }
